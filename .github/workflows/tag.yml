@@ -11,9 +11,7 @@ on:
 
 jobs:
   tag:
-    runs-on:
-      group: databricks-protected-runner-group
-      labels: linux-ubuntu-latest
+    runs-on: [ubuntu-latest]
 
     steps:
       - uses: actions/checkout@v4
